@@ -9,7 +9,7 @@ const getById = (autorId) => {
 
 const createA = ({ nombre, email, imagen }) => {
     return db.query(
-        'insert into clientes (nombre, email, imagen values (?, ?, ?)',
+        'insert into autores (nombre, email, imagen) values (?, ?, ?)',
         [nombre, email, imagen]
     );
 };

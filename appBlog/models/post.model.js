@@ -12,7 +12,7 @@ const getByAutorId = (autorId) => {
 
 const createP = ({ título, descripción, fecha, categoría, autorId }) => {
     return db.query(
-        'insert into clientes (título, descripción, fecha, categoría, autorId) values (?, ?, ?, ?, ?)',
+        'insert into posts (título, descripción, fecha, categoría, autorId) values (?, ?, ?, ?, ?)',
         [título, descripción, fecha, categoría, autorId]
     );
 };

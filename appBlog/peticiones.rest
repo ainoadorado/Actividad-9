@@ -8,7 +8,7 @@
 GET {{host}}/api/posts
 
 ### GET BY AUTORID
-GET {{host}}/api/posts/1
+GET {{host}}/api/posts/2
 
 ###POST CUANDO EXISTE EL AUTORID EN LA BD
 POST {{host}}/api/posts

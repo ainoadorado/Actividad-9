@@ -1,4 +1,4 @@
-const { getAll, getById } = require('../../models/autor.model');
+const { getAll, getById, createA } = require('../../models/autor.model');
 
 const router = require('express').Router();
 
@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
 
 router.post('/', async (req, res) => {
     try {
-        const [result] = await create(req.body);
+        const [result] = await createA(req.body);
         const [autor] = await getById(result.insertId);
         res.json(autor[0]);
     } catch (error) {
