@@ -31,7 +31,7 @@ Content-Type: application/json
     "descripción": "Girón",
     "fecha": "03-07-2020",
     "categoría": "deportes",
-    "autorId": 3
+    "autorId": 56
 }
 
 
@@ -47,7 +47,7 @@ Content-Type: application/json
 {
     "nombre": "Mauro Fernández", 
     "email": "maurof@gmail.com",
-    "imagen": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "imagen": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=800"
 }
 
 
