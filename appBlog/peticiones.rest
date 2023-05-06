@@ -1,0 +1,53 @@
+@host = http://localhost:3000
+
+
+
+//POSTS
+
+//GET ALL
+GET {{host}}/api/posts
+
+### GET BY AUTORID
+GET {{host}}/api/posts/1
+
+###POST CUANDO EXISTE EL AUTORID EN LA BD
+POST {{host}}/api/posts
+Content-Type: application/json
+
+{
+    "título": "I love bicis", 
+    "descripción": "Un blog a pedales y en defensa de la movilidad activa y sostenible",
+    "fecha": "03-07-2020",
+    "categoría": "deportes",
+    "autorId": 3
+}
+
+###POST CUANDO NO EXISTE EL AUTORID EN LA BD
+POST {{host}}/api/posts
+Content-Type: application/json
+
+{
+    "título": "I love bicis", 
+    "descripción": "Girón",
+    "fecha": "03-07-2020",
+    "categoría": "deportes",
+    "autorId": 3
+}
+
+
+### AUTORES
+
+//GET ALL
+GET {{host}}/api/autores
+
+###POST
+POST {{host}}/api/autores
+Content-Type: application/json
+
+{
+    "nombre": "Mauro Fernández", 
+    "email": "maurof@gmail.com",
+    "imagen": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=800",
+}
+
+
